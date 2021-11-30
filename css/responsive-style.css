@@ -19,6 +19,12 @@
 
     /*------ UTILITY --------*/
     
+    .clearfix::after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+
     i{
         color: white;
     }
@@ -87,8 +93,8 @@
         top: 30px;
         right: 60px;
     }
- 
 
+    
     /* ----contenitore cards------- */
 
     .container-cards {
@@ -98,6 +104,18 @@
         overflow: auto;
         position: relative;
     }
+
+
+
+    .navbar{
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+        border: 2px solid red;
+    }
+
+
+
 
 
     /* -----FOOTER ------ */
@@ -110,6 +128,8 @@
         justify-content: space-between;
 
     }
+
+    /* -----box canzone in ascolto ------ */
 
     .box-player{
         width: 33%;
@@ -125,7 +145,7 @@
 
     .text-song{
         border: 1px solid red;
-        padding-left: 10px;
+        padding: 0 10px;
         display: flex;
         flex-direction: column;
     }
@@ -137,14 +157,45 @@
 
     }
 
-
-
-    .favourite-icon{
-        width: 100%;
-        height: 50px;
+    .icon-item {
         border: 1px solid red;
-        text-align: center;
+        margin-right: 3px;
     }
+    .command-left > .icon-item i{
+        text-align: center;
+        color: rgb(123,123,123);
+    }
+
+
+    /* ------box comandi -------- */
+
+    .commands-player{
+        width: 50%;
+        height: 100%;
+        display: block;
+        border: 1px dashed red;
+    }
+    .timebar-player{
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        border: 1px dashed red;
+    }
+
+    .volumebar{
+        width: 80px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: rgb(123,123,123);
+    }
+
+    .volumebar .vol-50{
+        width: 50%;
+        height: 3px;
+        background-color: white;
+    }
+
+
 
 
     /* fine media query */
