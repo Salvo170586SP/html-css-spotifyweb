@@ -7,19 +7,58 @@
         box-sizing: border-box;
     }
 
+
     #app {
         height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
+    /*----- MAIN -----*/
+
     .main-container {
         height: calc(100% - 100px);
         background-color: red;
     }
 
+    /* -----sidebar---- */
+    .col-15{
+        width: 15%;
+        height: 100%;
+        background-color: yellowgreen;
+        float: left;
+    }
+    
+    /* -----corpo principale------ */
+    .col-85{
+        width: 85%;
+        height: 100%;
+        background-color: green;
+        float: left;
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----FOOTER ------ */
     .player {
         height: 100px;
         background-color: blue
