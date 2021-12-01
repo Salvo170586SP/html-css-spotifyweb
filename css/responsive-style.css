@@ -295,4 +295,10 @@ padding: 10px 0;
     .container {
         width: calc(100% - 50px);
     }
+
+
+    /* card */
+    .card{
+        width: 200px;
+    }
 }
