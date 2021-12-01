@@ -248,6 +248,7 @@ padding: 10px 0;
 /* -----sezione brano in esecuzione ------ */
 .item-play{
     width: calc(100% / 3);
+    margin-right: 5px;
     border: 1px dashed red;
 }
 
@@ -268,6 +269,10 @@ padding: 10px 0;
 
 .text-play span{
     font-size: 10px;
+}
+
+.item-play i{
+    margin-right: 10px;
 }
 
 
@@ -297,15 +302,20 @@ padding: 10px 0;
 /*-------- sezione comandi volume ------*/
 
 
-.item-volume{
-    width: calc(100% / 3);
-    height: 100%;
-    border: 1px dashed red;
+.item-volumebar{
+    width: 50%;
+    height: 3px;
+    background-color: gray;
 }
 
-.flex{
-    display: flex;
-    flex-direction: row;
+.white{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.item-volume i{
+    padding-right: 5px;
 }
 
 
