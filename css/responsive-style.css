@@ -1,278 +1,296 @@
+/*----- GENERAL --------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------ UTILITY --------*/
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+i {
+    color: white;
+}
+
+
+h2 {
+    color: white;
+    margin: 10px 0;
+}
+
+p {
+    color: rgb(128, 128, 128);
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.br-50 {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*----- MAIN -----*/
+
+.main-container {
+    height: calc(100% - 100px);
+    background-color: red;
+}
+
+/* -----sidebar---- */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin: 15px 0;
+}
+
+.sidebar img {
+    width: 30px;
+}
+
+#account img {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+}
+
+
+
+/* -----corpo principale------ */
+.container {
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: green;
+    float: left;
+}
+
+/* ------header container------- */
+
+.header-container {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(8, 11, 18, 0.541);
+    position: fixed;
+    top: 0;
+    color: white;
+}
+
+.upgrade {
+    border: 1px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
+
+
+/* ----contenitore cards------- */
+
+.container-cards {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 25, 34);
+    overflow: auto;
+}
+
+
+/*--------- menù cards ----------- */
+.navbar {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    border: 2px solid red;
+    padding: 10px;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar li {
+    padding-bottom: 25px;
+}
+
+.navbar a {
+    color: rgb(125, 127, 132);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ------ cards-------- */
+
+.box-cards {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    color: white;
+}
+
+
+#recently,
+#created,
+#popular {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 230px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.box-image-card img {
+    width: 100%;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.text-card {
+    text-align: center;
+}
+
+
+
+
+/* -----FOOTER ------ */
+.player {
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* -----sezione canzone in ascolto ------ */
+
+.box-player {
+    width: 33%;
+    height: 100%;
+    border: 1px dashed red;
+    display: flex;
+    align-items: center;
+}
+
+.cover-play img {
+    width: 30px;
+}
+
+.text-song {
+    border: 1px solid red;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-song span {
+    display: block;
+    font-size: 10px;
+    color: rgb(119, 119, 119);
+
+}
+
+.icon-item {
+    border: 1px solid red;
+    margin-right: 3px;
+}
+
+.command-left>.icon-item i {
+    text-align: center;
+    color: rgb(123, 123, 123);
+}
+
+
+/* ------sezione centrale-------- */
+
+.commands-player {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px dashed red;
+}
+
+.timebar-player {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px dashed red;
+}
+
+.command-center {
+    flex-direction: column;
+}
+
+
+
+/*-------- sezione volume ------*/
+
+
+.volumebar {
+    width: 80px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: rgb(123, 123, 123);
+}
+
+.volumebar .vol-50 {
+    width: 50%;
+    height: 3px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
 
-    /*----- GENERAL --------*/
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Lato', sans-serif;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    #app {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*------ UTILITY --------*/
-
-    .clearfix::after {
-        display: table;
-        content: '';
-        clear: both;
-    }
-
-    i {
-        color: white;
-    }
-
-    
-    h2 {
-        color: white;
-        margin: 10px 0;
-    }
-
-    p{
-        color:rgb(128, 128, 128);
-        margin: 10px 0;
-        font-size: 15px;
-    }
-
-    .br-50{
-        border-radius: 50%;
-        overflow: hidden;
-    }
-
-    /*----- MAIN -----*/
-
-    .main-container {
-        height: calc(100% - 100px);
-        background-color: red;
-    }
-
-    /* -----sidebar---- */
     .sidebar {
         width: 50px;
-        height: 100%;
-        background-color: black;
-        float: left;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
-    .menu-item {
-        margin: 15px 0;
-    }
-
-    .sidebar img {
-        width: 30px;
-    }
-
-    #account img {
-        width: 30px;
-        height: 30px;
-        background-color: rgb(128, 128, 128);
-        border-radius: 50%;
-    }
-
-
-
-    /* -----corpo principale------ */
     .container {
         width: calc(100% - 50px);
-        height: 100%;
-        background-color: green;
-        float: left;
     }
-
-    /* ------header container------- */
-
-    .header-container {
-        width: 100%;
-        height: 100px;
-        background-color: rgba(8, 11, 18, 0.541);
-        position: fixed;
-        top: 0;
-        color: white;
-    }
-
-    .upgrade {
-        border: 1px solid white;
-        border-radius: 20px;
-        display: inline-block;
-        padding: 10px 30px;
-        position: absolute;
-        top: 30px;
-        right: 60px;
-    }
-
-
-    /* ----contenitore cards------- */
-
-    .container-cards {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(20, 25, 34);
-        overflow: auto;
-        position: relative;
-    }
-
-
-    /*--------- menù cards ----------- */
-    .navbar {
-        width: 100%;
-        height: 100px;
-        margin-top: 100px;
-        border: 2px solid red;
-        padding: 10px;
-
-    }
-
-    .navbar ul {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar li {
-        padding-bottom: 25px;
-    }
-
-
-    .navbar a {
-        color: rgb(125, 127, 132);
-        text-decoration: none;
-        margin-right: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    /* ------ cards-------- */
-
-    .box-cards {
-        width: 100%;
-        height: 100vh;
-        padding: 0 20px;
-        color: white;
-    }
-
-
-    #recently,
-    #created,
-    #popular{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .card {
-        width: 230px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
-    .box-image-card img{
-        width: 100%;
-    }
-
-    .br-50{
-        border-radius: 50%;
-    }
-
-    .text-card{
-        text-align: center;
-    }
-
-   
-
-
-    /* -----FOOTER ------ */
-    .player {
-        height: 100px;
-        padding: 10px;
-        background-color: rgb(40, 40, 40);
-        color: white;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    /* -----box canzone in ascolto ------ */
-
-    .box-player {
-        width: 33%;
-        height: 100%;
-        border: 1px dashed red;
-        display: flex;
-        align-items: center;
-    }
-
-    .cover-play img {
-        width: 30px;
-    }
-
-    .text-song {
-        border: 1px solid red;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text-song span {
-        display: block;
-        font-size: 10px;
-        color: rgb(119, 119, 119);
-
-    }
-
-    .icon-item {
-        border: 1px solid red;
-        margin-right: 3px;
-    }
-
-    .command-left>.icon-item i {
-        text-align: center;
-        color: rgb(123, 123, 123);
-    }
-
-
-    /* ------box comandi -------- */
-
-    .commands-player {
-        width: 50%;
-        height: 100%;
-        display: block;
-        border: 1px dashed red;
-    }
-
-    .timebar-player {
-        width: 50%;
-        height: 100%;
-        display: inline-block;
-        border: 1px dashed red;
-    }
-
-    .volumebar {
-        width: 80px;
-        height: 3px;
-        border-radius: 1px;
-        background-color: rgb(123, 123, 123);
-    }
-
-    .volumebar .vol-50 {
-        width: 50%;
-        height: 3px;
-        background-color: white;
-    }
-
-
-
-
-    /* fine media query */
 }
