@@ -164,6 +164,10 @@ padding: 10px 0;
     padding: 20px;
 }
 
+#box-cards p{
+    color: gray;
+}
+
 /*--------- navbar cards ----------- */
 
 .navbar-cards{
@@ -186,9 +190,15 @@ padding: 10px 0;
 
 /* ------ cards-------- */
 
-#flex-cards{
+#recently,
+#created
+{
     display: flex;
     flex-wrap: wrap;
+}
+
+.margin-t{
+    margin-top: 20px ;
 }
 
 .card{
@@ -203,6 +213,9 @@ padding: 10px 0;
     width: 100%;
 }
 
+.text-card span{
+    font-size: 15px;
+}
 
 
 
