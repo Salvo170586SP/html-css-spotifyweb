@@ -224,9 +224,6 @@ padding: 10px 0;
 
 
 
-
-
-
 /* -----FOOTER ------ */
 .player {
     height: 100px;
@@ -238,28 +235,78 @@ padding: 10px 0;
 
 }
 
-/* -----sezione canzone in ascolto ------ */
+.box-player{
+    width: 200px;
+    height: 100%;
+    border: 1px dashed red;
+}
 
 
 
 
 
+/* -----sezione brano in esecuzione ------ */
+.item-play{
+    width: calc(100% / 3);
+    border: 1px dashed red;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cover-song-play{
+    width: 40px;
+    height: 40px;
+}
+
+.cover-song-play img{
+    width: 100%;
+}
+
+.text-play span{
+    font-size: 10px;
+}
 
 
 
 
-/* ------sezione centrale-------- */
+/* ------sezione comandi centrali-------- */
+
+.flex-g{
+    flex-grow: 1;
+}
+
+.command-top{
+    width: 100%;
+    height: 50%;
+    border: 1px dashed red;
+}
+
+.command-bottom{
+    width: 100%;
+    height: 50%;
+    border: 1px dashed red;
+
+}
 
 
 
+/*-------- sezione comandi volume ------*/
 
 
+.item-volume{
+    width: calc(100% / 3);
+    height: 100%;
+    border: 1px dashed red;
+}
 
-
-
-/*-------- sezione volume ------*/
-
-
+.flex{
+    display: flex;
+    flex-direction: row;
+}
 
 
 
