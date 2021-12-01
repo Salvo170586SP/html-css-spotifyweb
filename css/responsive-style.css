@@ -29,6 +29,19 @@ a {
     text-decoration: none;
 }
 
+.border-b{
+    border-bottom: 1px solid gray;
+}
+
+#box-icon-account{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    background-image: url('../img/profile.svg');
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
 /*----- MAIN -----*/
@@ -198,6 +211,10 @@ padding: 10px 0;
 
     #logo {
         background-image: url('../img/logo-small.svg');
+    }
+
+    .menu-item{
+        text-align: center;
     }
 
     .menu-item span {
