@@ -126,8 +126,17 @@ padding: 10px 0;
     position: fixed;
     top: 0;
     color: white;
+    text-align: end;
 }
 
+.upgrade{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 35px;
+    right: 220px;
+}
 
 
 /* ----contenitore cards------- */
