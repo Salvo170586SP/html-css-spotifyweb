@@ -24,6 +24,9 @@ body {
     clear: both;
 }
 
+
+
+
 /*----- MAIN -----*/
 
 .main-container {
@@ -43,13 +46,37 @@ body {
     justify-content: space-between;
 }
 
-#logo{
+
+
+#logo {
     width: 100%;
     height: 40px;
     background-image: url('../img/logo.svg');
     background-repeat: no-repeat;
+    margin-bottom: 10px;
 }
 
+.menu-item {
+    border: 1px dashed red;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.menu-item img {
+    width: 30px;
+    vertical-align: middle;
+    color: gray;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item span {
+
+    font-weight: bold;
+}
 
 
 /* -----corpo principale------ */
@@ -152,12 +179,20 @@ body {
         width: 50px;
     }
 
-    #logo{
+    #logo {
         background-image: url('../img/logo-small.svg');
     }
+
+    .menu-item span {
+        display: none;
+    }
+
+    .menu-item img {
+        vertical-align: none;
+    }
+
 
     .container {
         width: calc(100% - 50px);
     }
 }
-
