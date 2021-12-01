@@ -213,6 +213,10 @@ padding: 10px 0;
     width: 100%;
 }
 
+.radius-50{
+    border-radius: 50%;
+}
+
 .text-card span{
     font-size: 15px;
 }
@@ -314,4 +318,5 @@ padding: 10px 0;
     .card{
         width: 200px;
     }
+
 }
