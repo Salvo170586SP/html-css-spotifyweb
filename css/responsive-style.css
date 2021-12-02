@@ -358,11 +358,16 @@ h2 {
 }
 
 .circle{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: white;
     border-radius: 50%;
 }
+
+.circle{
+    display: none;
+}
+
 
 
 .white {
@@ -373,6 +378,17 @@ h2 {
     justify-content: flex-end;
     align-items: center;
 }
+
+.white:hover {
+    transition: 0.2s;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.white:hover .circle{
+    display: inline-block;
+}
+
 
 .item-volume i {
     padding-right: 5px;
