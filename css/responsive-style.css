@@ -200,7 +200,7 @@ h2 {
 }
 
 .card {
-    width: calc(100% / 6 - 20px);
+    max-width: calc(100% / 6 - 20px);
     text-align: center;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -375,7 +375,7 @@ h2 {
 
     /* card */
     .card {
-        width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 
 }
@@ -391,9 +391,16 @@ h2 {
 
       /* card */
       .card {
-        width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }
 
 
+@media screen and (min-width: 992px){
+       /* card */
+       .card {
+        max-width: calc(100% / 4 - 20px);
+    }
+}
+    
 
