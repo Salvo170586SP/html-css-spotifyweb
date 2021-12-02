@@ -245,11 +245,19 @@ h2 {
 }
 
 
-figure{
+
+
+
+
+
+.layover{
     position: relative;
+    cursor: pointer;
 }
 
-figure::before{
+
+
+.layover::before{
     content:'';
     background-color: rgba(0, 0, 0, 0.349);
     width: 100%;
@@ -257,16 +265,29 @@ figure::before{
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 }
 
-figure > i{
+.play-hover{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
     color: white;
+    display: none;
 }
+
+.layover:hover .play-hover{
+    display: block;
+}
+
+.layover:hover::before{
+    display: block;
+}
+ 
+
+
+
 
 
 
