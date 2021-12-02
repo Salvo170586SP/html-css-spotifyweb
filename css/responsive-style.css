@@ -375,7 +375,7 @@ h2 {
 
     /* card */
     .card {
-        width: 200px;
+        width: calc(50% - 20px);
     }
 
 }
