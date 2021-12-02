@@ -273,6 +273,12 @@ h2 {
     margin-right: 5px;
 }
 
+.text-play span:hover{
+    border-bottom: 1px solid grey;
+    color: white;
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -290,13 +296,18 @@ h2 {
 
 .text-play span {
     font-size: 10px;
+    color: grey;
 }
 
 .item-play i {
     margin-right: 10px;
+    color: grey;
 }
 
-
+.item-play i:hover{
+    color: white;
+    cursor: pointer;
+}
 
 
 /* ------sezione comandi centrali-------- */
