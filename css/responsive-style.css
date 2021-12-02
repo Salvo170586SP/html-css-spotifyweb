@@ -329,6 +329,11 @@ h2 {
     font-size: 1.8em;
 }
 
+.fa-play-circle:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .command-bottom, .command-top {
     width: 100%;
@@ -346,16 +351,27 @@ h2 {
 /*-------- sezione comandi volume ------*/
 
 
-.item-volumebar {
+.item-bar {
     width: 50%;
     height: 3px;
     background-color: gray;
 }
 
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
 .white {
     width: 50%;
     height: 100%;
     background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .item-volume i {
