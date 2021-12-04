@@ -249,9 +249,7 @@ h2 {
 
 
 
-
-
-.layover {
+.layover, .layover-radius {
     position: relative;
     cursor: pointer;
     top: 0;
@@ -259,7 +257,7 @@ h2 {
 }
 
 
-
+/* hover square */
 .layover::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.349);
@@ -289,8 +287,26 @@ h2 {
 }
 
 
+/* hover circle */
+.layover-radius::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
+.layover-radius:hover .play-hover {
+    display: block;
+}
 
+.layover-radius:hover::before {
+    display: inline-block;
+}
 
 /* -----FOOTER ------ */
 .player {
