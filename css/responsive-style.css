@@ -212,7 +212,8 @@ h2 {
 /* ------ cards-------- */
 
 #recently,
-#created {
+#created,
+#popular {
     display: flex;
     flex-wrap: wrap;
 }
