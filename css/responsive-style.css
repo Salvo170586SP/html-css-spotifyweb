@@ -135,12 +135,12 @@ h2 {
 /* ------header container------- */
 
 .header-container {
-    width: 100%;
+    width: calc(100% - 200px);
     height: 100px;
     background-color: rgba(8, 11, 18, 0.541);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     color: white;
     text-align: end;
     z-index: 1;
@@ -513,6 +513,10 @@ h2 {
         display: none;
     }
 
+
+    .header-container{
+        width: calc(100% - 50px);
+    }
 
     /*  container */
     .container {
