@@ -70,6 +70,8 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    transition: all 0.1s ease;
+
 }
 
 
@@ -460,6 +462,9 @@ h2 {
 
 
 
+/*********** MEDIA QUERY ****************/
+
+/* desktop */
 @media screen and (max-width: 992px) {
 
     /* card */
@@ -470,7 +475,7 @@ h2 {
 
 
 
-
+/* tablet */
 @media screen and (max-width: 768px) {
 
     /* card */
@@ -483,14 +488,13 @@ h2 {
 
 
 
-
-
-
+/* mobile */
 @media screen and (max-width: 576px) {
 
     /* sidebar */
     .sidebar {
         width: 50px;
+        transition: all 0.2s ease;
     }
 
     #logo {
